@@ -1,0 +1,17 @@
+type Query {
+  me: User!
+}
+ 
+type User {
+  firstName: String!
+  lastName: String!
+  email: String!
+  image: Image!
+  friends(first: Int, last: Int): [User!]!
+  updatedAt: Int!
+}
+ 
+type Image {
+  alt: String!
+  src: String!
+}
