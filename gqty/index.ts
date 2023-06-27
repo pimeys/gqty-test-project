@@ -11,11 +11,14 @@ const queryFetcher: QueryFetcher = async function (
   { query, variables, operationName },
   fetchOptions
 ) {
+  console.log(query)
+  console.log(variables)
+
   // Modify "/api/graphql" if needed
-  const response = await fetch("/api/graphql", {
+  const response = await fetch("http://127.0.0.1:4000/graphql", {
     method: "POST",
     headers: {
-      "Content-Type": "application/json",
+      "x-api-key": "",
     },
     body: JSON.stringify({
       query,

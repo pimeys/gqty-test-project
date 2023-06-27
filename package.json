@@ -10,8 +10,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@gqty/cli": "^4.0.0-alpha-e9f8f97b.0",
+    "@types/node": "^18.14.2",
     "gqty": "3.0.0-alpha-e9f8f97b.0",
     "graphql": "^16.7.1",
+    "ts-node": "^10.9.1",
     "typescript": "^5.1.3"
   }
 }
